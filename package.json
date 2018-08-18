@@ -1,0 +1,33 @@
+{
+  "name": "line",
+  "version": "1.0.0",
+  "description": "",
+  "author": "taiyong <taiyong@youzan.com>",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "watch": "node scripts/watch.js"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-import": "^1.8.0",
+    "babel-plugin-zent": "^1.1.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "chalk": "^2.4.1",
+    "css-loader": "^1.0.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^2.1.6",
+    "precss": "^3.1.2",
+    "progress-bar-webpack-plugin": "^1.11.0",
+    "webpack": "^4.16.3"
+  }
+}

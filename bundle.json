@@ -1,0 +1,4 @@
+{
+  "mpEditorPluginJs": "dist/mp-editor-plugin.js",
+  "mpEditorPluginCss": "dist/mp-editor-plugin.css"
+}
