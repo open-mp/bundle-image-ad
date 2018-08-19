@@ -16,7 +16,7 @@ export default {
     previewType: 'react',
     editForm: EditorForm, // 数据编辑表单
     editFormType: 'react',
-    editable: false, // 组件数据是否可编辑
+    editable: true, // 组件数据是否可编辑
     canDelete: true, // 组件数据是否可删除
     dragable: true, // 是否可以拖拽
     highlightWhenSelect: true, // 选择后是否高亮
