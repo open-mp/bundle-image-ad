@@ -25,7 +25,7 @@ export default {
         return {
             size: IMAGE_SIZE.LARGE,
             images: [],
-          };;
+          };
     },
     // 验证示例数据
     validate(instance) {
