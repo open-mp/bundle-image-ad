@@ -1,4 +1,5 @@
 {
   "mpEditorPluginJs": "dist/mp-editor-plugin.js",
-  "mpEditorPluginCss": "dist/mp-editor-plugin.css"
+  "mpEditorPluginCss": "dist/mp-editor-plugin.css",
+  "mpComponent": "src/mp-component"
 }
