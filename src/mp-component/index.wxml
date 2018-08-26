@@ -1,3 +1,5 @@
-<!--components/goods/goods.wxml-->
-<text>pullDownCount: {{pullDownCount}}</text>
-<button bindtap="fireEvent">触发事件</button>
+<!--components/sku/sku.wxml-->
+ <view class="image-ad">
+     <text>这是图片广告组件</text>
+     <text>{{configData.images}}</text>
+ </view>

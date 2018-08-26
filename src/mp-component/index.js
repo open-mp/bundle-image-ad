@@ -1,37 +1,31 @@
-// components/goods/goods.js
+// components/sku/sku.js
 Component({
-  properties: {
-    id: String 
-  },
+    properties: {
+        id: String,
+        configData: Object
+    },
 
-  data: {
-    pullDownCount: 0
-  },
-  pageUtil: null,
-  methods: {
-    start({ pageUtil }) {
-      this.pageUtil = pageUtil;
+    data: {
+
     },
-    receiveData(data){
-      console.log(data)
+    pageUtil: null,
+
+    methods: {
+        start({pageUtil}) {
+            this.pageUtil = pageUtil;
+
+        },
+        pullGoodsDetail() {
+
+        }
     },
-    onPullDownRefresh() {
-      this.setData({ pullDownCount: ++this.data.pullDownCount});
-      wx.stopPullDownRefresh();
+    attached() {
+        this.triggerEvent("inited", {
+            instance: this,
+            id: this.id
+        })
     },
-    fireEvent() {
-      this.pageUtil.emit('pull-down-count', this.data.pullDownCount);
-    }
-  },
-  created () {},
-  attached () {
-    this.triggerEvent("inited", {
-      instance: this,
-      id: this.id,
-      interfaces: ['goods'], // 组件实现的接口 其他组件可以通过接口名查询实现组件的接口
-      pageEvent: ["pull-down-refresh"]
-    })
-  },
-  moved() { },
-  detached () { },
-})
+    detached() {
+        this.pageUtil.removeComponent(this.id);
+    },
+});
